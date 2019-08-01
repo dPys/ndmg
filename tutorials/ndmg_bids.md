@@ -31,4 +31,7 @@ ndmg_bids --participant_label 0025427 --session_label 1 --modality dwi --atlas d
 
 # Option C (Docker via NeuroData AWS -- credentials required):
 ndmg_bids --bucket ndmg-data --remote_path HNU1t --participant_label 0025427 --session_label 1 --modality dwi --atlas desikan --mod det --tt local --mf csd --sp native /input /output participant
+
+# Option D (locally)
+ndmg_bids --participant_label 0025427 --session_label 1 --modality dwi --atlas desikan --mod det --tt local --mf csd --sp native {PATH TO BIDS DIRECTORY} {PATH TO AN OUTPUT DIRECTORY} participant
 ```
